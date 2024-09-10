@@ -46,9 +46,7 @@ const AdminDashboard = () => {
 
     <div className="whole-container">
       <div className="Admin-navbar">
-        <div className="Admin-name">
-        <h2>Admin Dashboard</h2>
-        </div>
+        <h1>Admin Dashboard</h1>
         <div className="Admin-links">
           <Link to="users">User</Link>
           <Link to="evaluation-tools">Evaluation Tools</Link>
@@ -57,11 +55,12 @@ const AdminDashboard = () => {
           <Link to="evaluation-report">Evaluation Report</Link> 
         </div>
       </div>
-      <div className="main-container">
+
+      <div className="nav-container">
           <div className="Admin-header">
             <p>Welcome, Admin! Here you can manage users, evaluation forms, and more.</p>
           </div>
-            <div className="route-containers">
+            <div className="route-container">
               <Routes>
                 <Route path="users" element={<UsersPage />} />
                 <Route path="evaluation-tools" element={<EvaluationToolsPage />} />
